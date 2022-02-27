@@ -6,37 +6,83 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    color: #4E5150;
+
 }
 
 /*======= UTILITIES =========*/
-
-.flex-profile{
-    border: blue solid 2px;
+.flex{
     display: flex;
     flex-direction: column;
-    gap: .8rem;
+    gap: 1rem;
     align-items: center;
-    justify-items: center;
-    padding: 2rem;
-
 }
 
-.flex-profile-status{
+.flex-status{
     display: flex;
+    gap: 1rem;
 }
 
-.profile-image{
-    width: 15%;
-    border-radius: 8px;
+.bg-status-color{
+    background-color: #E5E5E5;
 }
 
+.posts-padding{
+    padding: 1rem 1.5rem 1rem 1.5rem;
+}
+
+.follower-following-padding{
+    padding: 1rem;
+}
 
 /*====== LAYOUT =========*/
 body{
     display: grid;
-    place-items: center;
+    place-content: center;
     min-height: 100vh;
-    line-height: 1.5;
+}
+
+.gallery-container{
+    display: grid;
+    gap: 5rem;
+    place-items: center;
+    padding-block: 2rem;
+    width: min(95%, 76rem);
+    margin-inline: auto;
+}
+
+/*======== PROFILE IMAGE =========*/
+
+.profile img{
+    width: 20%;
+    border-radius: 8px;
+}
+
+/*========= TEXT ========*/
+.profile{
+    text-align: center;
+}
+
+.profile .name{
+    font-size: 1.2rem;
+}
+
+.profile .city{
+    font-size: .8rem;
+    opacity: 0.7;
+}
+
+/*======== STATUS ==========*/
+.status div{
+    border-radius: 10px;
 }
 
 
+.status p:first-of-type{
+    font-size: 1rem;
+}
+
+.status p:last-of-type{
+    font-size: .8rem;
+    opacity: 0.7;
+}
