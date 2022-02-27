@@ -8,6 +8,30 @@
     font-weight: 600;
 }
 
+/*======= UTILITIES =========*/
+
+.flex-profile{
+    border: blue solid 2px;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    align-items: center;
+    justify-items: center;
+    padding: 2rem;
+
+}
+
+.flex-profile-status{
+    display: flex;
+}
+
+.profile-image{
+    width: 15%;
+    border-radius: 8px;
+}
+
+
+/*====== LAYOUT =========*/
 body{
     display: grid;
     place-items: center;
@@ -15,19 +39,4 @@ body{
     line-height: 1.5;
 }
 
-.grid-gallery{
-    border: 1px red solid;
-    display: grid;
-    gap: 2rem;
-    place-items: center; 
-    padding-block: 2rem;
-    width: min(95%, 76rem);
-}
 
-.profile{
-    display: grid;
-    place-items: center;
-}
-.flex{
-    display: flex;
-}
