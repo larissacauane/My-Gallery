@@ -25,6 +25,8 @@ body {
   min-width: 100%;
 }
 
+
+
 /* ==================================== */
 /* PROFILE SECTION */
 /* ==================================== */
@@ -91,6 +93,33 @@ body {
 .status p:last-child {
   text-transform: uppercase;
   color: var(--very-light-gray);
+}
+
+/* ==================================== */
+/* GRID GALLERY */
+/* ==================================== */
+.gallery-imagens{
+    padding: 2.8rem 1.8rem;
+    display: grid;
+    gap: .8rem;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-imagens img{
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-col-span-2{
+    grid-column: span 2;
+    
+}
+
+.gallery-imagens img:nth-child(4){
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
 }
 
 /* .flex{
